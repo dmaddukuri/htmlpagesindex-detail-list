@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our Restaurant</title>
+        <meta name="viewport"content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="page.css" >
+        <link rel="stylesheet" href="owl.carousel.min.css" >
+	    <link rel="stylesheet" href="owl.theme.default.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>        
+    </head>
+    <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+	<div class="container-fluid">
+        <nav class="navbar navbar-inverse bg-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.jpg" style="width: 30px;" alt="logo" >                        
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="#">Offers</a></li>
+                    <!-- drop down-->
+                    <li class="active nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Restaurants</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Listing</a>
+                            <a class="dropdown-item" href="#">Detail + Cart</a>
+                            <a class="dropdown-item" href="#">Checkout</a>
+                        </div>
+                    </li>
+                    
+                    <li class="active nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="#">My Account</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="#">Cart</a></li>
+                </ul>
+
+            </div>
+        </nav>
+		
+		<section class="pt-5 pb-5 bg-dark position-relative text-center">
+		 <div class="jumbotron">
+             <div class="row">
+			 <h1 class="text-white">Offers Near You </h1>
+			 <h6 class="text-white-50">Best deals at your favourite restaurants</h6>
+			 </div>
+         </div>
+        </section>
+		
+		 <div class="jumbotron">
+            
+			 <h4 class="font-weight-bold mt-0 mb-3">OFFERS <small class="h6 mb-0 ml-2">299 restaurants
+                     </small>
+                  </h4>
+				
+			  
+			 <div class="row">
+			
+				 <div class="col-md-4">
+				 
+				 <div id="login-box"> 
+				 
+				 <div class="filters shadow-sm rounded bg-white mb-4">
+                     <div class="filters-header border-bottom pl-4 pr-4 pt-3 pb-3">
+					<p class="text-white">FILTER BY</p><hr>
+					<p style="color:blue">Location</p>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+						 <div class="filters-card-body card-shop-filters">
+							<div class="custom-control custom-checkbox">
+							   <input type="checkbox" class="custom-control-input" id="cb1">
+							   <label class="custom-control-label" for="cb1">Ludhiana Junction <small class="text-black-50">230</small>
+							   </label>
+							</div>
+							<div class="custom-control custom-checkbox">
+							   <input type="checkbox" class="custom-control-input" id="cb2">
+							   <label class="custom-control-label" for="cb2">Model Town <small class="text-black-50">95</small>
+							   </label>
+							</div>
+							<div class="custom-control custom-checkbox">
+							   <input type="checkbox" class="custom-control-input" id="cb3">
+							   <label class="custom-control-label" for="cb3">Civil Lines <small class="text-black-50">35</small>
+							   </label>
+							</div>
+							<div class="custom-control custom-checkbox">
+							   <input type="checkbox" class="custom-control-input" id="cb4">
+							   <label class="custom-control-label" for="cb4">Dugri <small class="text-black-50">46</small>
+							   </label>
+							</div>
+							<div class="custom-control custom-checkbox">
+							   <input type="checkbox" class="custom-control-input" id="cb5">
+							   <label class="custom-control-label" for="cb5">PAU <small class="text-black-50">20</small></label>
+							</div>
+							<div class="mt-2"><a href="listing.html#" class="link">See all</a></div><hr>
+						 </div>
+						</div>
+					 </div>				 
+				</div>
+				</div>
+				<br><br>
+				<div id="img-box"> 				    
+				   <div>
+					  <div class="filters-card-body card-shop-filters pt-0">
+						 <div class="custom-control custom-radio">
+							<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+							<label class="custom-control-label" for="customRadio1">Gold Partner</label>
+						 </div>
+						 <div class="custom-control custom-radio mt-1 mb-1">
+							<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+							<label class="custom-control-label" for="customRadio2">Order Food Online</label>
+						 </div>
+						 <div class="custom-control custom-radio">
+							<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" checked="">
+							<label class="custom-control-label" for="customRadio3">Osahan Eat</label>
+						 </div>
+						 <hr>
+						 <small class="text-success">Use code COUPON50 to get 50% OFF (up to $30) on first 5 orders. T&amp;Cs apply.</small>
+					  </div>
+				   </div>                        
+				</div>
+			</div>
+			
+		
+			  
+		
+			
+			<div class="col-md-8">
+				 
+				 <p>resturant </p>
+				 
+				 <div class="wrapper">
+				  <div class="owl-carousel owl-theme">
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\1.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\2.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\3.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\4.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\5.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\6.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\7.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\8.jpg" width="90" height="60"></div>
+					<div class="item"><img alt=""Food item" class="img-fluid" src="..\images\9.jpg" width="90" height="60"></div>		
+				   </div>
+                 </div>&nbsp;
+				 
+				 <div class="container"> 
+					  <div class="row">
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="0.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="1.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="2.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+					  </div>
+				 </div>
+				 <br>
+				 <div class="container"> 
+					  <div class="row">
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="3.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="4.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="5.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+					  </div>
+				 </div>
+				 <br>
+				 <div class="container"> 
+					  <div class="row">
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="LAZY.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="Takeway1.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div id="img-box"> 
+										<div class="container">
+											<img class="img-fluid img-responsive" src="EAT.jpg" alt="restaurant" width="250" height="150">
+											<div class="top-left">	
+												<h5 class="text-white">Promoted</h5>
+											<br><br><br>	 <button class="btn btn-success" type="button"><i class="icofont-clock-time"></i>* 3.1 (300+) </button>
+												<!--<p>* 3.1 (300+) </p> -->
+											</div>
+										</div>
+										<div>										
+											 <h6><a href="..\detail3\detail.html">World Famous</a></h6>
+											 <h6>North Indian • American • Pure veg</h6>
+											 <h6><span><i></i> 20–25 min</span> <span> $250 FOR TWO</span></h6>
+										
+											 <span>OFFER</span> <small>65% off | Use Coupon COUPON50</small>
+											
+										</div>
+									</div>
+								</div>
+					  </div>
+				 </div>
+                      <br>
+					   <div class="col-md-12 text-center load-more">
+                        <button class="btn btn-primary" type="button" disabled="">
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                        </button>  
+                     </div>
+            </div>
+		
+		</div>
+        </div>
+		
+		
+		
+                 
+				 
+				 
+				 
+				 
+		
+		
+		
+	<footer>
+	  <section>
+         <div class="jumbotron">
+            <div class="row">
+               <div class="text-center">
+                  <h5>Operate food store or restaurants? <a href="..\home\home.html">Work With Us</a></h5>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-12 col-sm-12">
+                  <h6 class="mb-3">Subscribe to our Newsletter</h6>
+                  <form class="newsletter-form mb-1">
+                     <div class="input-group">
+                        <input type="text" placeholder="Please enter your email" class="form-control">
+                        <div class="input-group-append">
+                           <button type="button" class="btn btn-primary">
+                           Subscribe
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+                  <p><a class="text-info" href="register.html">Register now</a> to get updates on <a href="..\home\offers.html">Offers and Coupons</a></p>
+                  <div class="app">
+                     <p class="mb-2">DOWNLOAD APP</p>
+                     <a href="..\home\detail.html#">
+                     <img class="img-fluid" src="google_play.png">
+                     </a>
+                     <a href="..\home\detail.html#">
+                     <img class="img-fluid" src="app_store.png">
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-1 col-sm-6 mobile-none">
+               </div>
+               <div class="col-md-2 col-4 col-sm-4">
+                  <h6 class="mb-3">About OE</h6>
+                  <ul>
+                     <li><a href="..\home\detail.html#">About Us</a></li>
+                     <li><a href="..\home\detail.html#">Culture</a></li>
+                     <li><a href="..\home\detail.html#">Blog</a></li>
+                     <li><a href="..\home\detail.html#">Careers</a></li>
+                     <li><a href="..\home\detail.html#">Contact</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-4 col-sm-4">
+                  <h6 class="mb-3">For Foodies</h6>
+                  <ul>
+                     <li><a href="..\home\detail.html#">Community</a></li>
+                     <li><a href="..\home\detail.html#">Developers</a></li>
+                     <li><a href="..\home\detail.html#">Blogger Help</a></li>
+                     <li><a href="..\home\detail.html#">Verified Users</a></li>
+                     <li><a href="..\home\detail.html#">Code of Conduct</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-4 col-sm-4">
+                  <h6 class="mb-3">For Restaurants</h6>
+                  <ul>
+                     <li><a href="..\home\detail.html#">Advertise</a></li>
+                     <li><a href="..\home\detail.html#">Add a Restaurant</a></li>
+                     <li><a href="..\home\detail.html#">Claim your Listing</a></li>
+                     <li><a href="..\home\detail.html#">For Businesses</a></li>
+                     <li><a href="..\home\detail.html#">Owner Guidelines</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <p class="text-black">POPULAR COUNTRIES</p>
+                  <div class="search-links">
+                     <a href="..\home\detail.html#">Australia</a> |  <a href="..\home\detail.html#">Brasil</a> | <a href="..\home\detail.html#">Canada</a> |  <a href="..\home\detail.html#">Chile</a>  |  <a href="..\home\detail.html#">Czech Republic</a> |  <a href="..\home\detail.html#">India</a>  |  <a href="..\home\detail.html#">Indonesia</a> |  <a href="..\home\detail.html#">Ireland</a> |  <a href="..\home\detail.html#">New Zealand</a> | <a href="..\home\detail.html#">United Kingdom</a> |  <a href="..\home\detail.html#">Turkey</a>  |  <a href="..\home\detail.html#">Philippines</a> |  <a href="..\home\detail.html#">Sri Lanka</a>  |  <a href="..\home\detail.html#">Australia</a> |  <a href="..\home\detail.html#">Brasil</a> | <a href="..\home\detail.html#">Canada</a> |  <a href="..\home\detail.html#">Chile</a>  |  <a href="..\home\detail.html#">Czech Republic</a> |  <a href="..\home\detail.html#">India</a>  |  <a href="..\home\detail.html#">Indonesia</a> |  <a href="..\home\detail.html#">Ireland</a> |  <a href="..\home\detail.html#">New Zealand</a> | <a href="..\home\detail.html#">United Kingdom</a> |  <a href="..\home\detail.html#">Turkey</a>  |  <a href="..\home\detail.html#">Philippines</a> |  <a href="..\home\detail.html#">Sri Lanka</a><a href="..\home\detail.html#">Australia</a> |  <a href="..\home\detail.html#">Brasil</a> | <a href="..\home\detail.html#">Canada</a> |  <a href="..\home\detail.html#">Chile</a>  |  <a href="..\home\detail.html#">Czech Republic</a> |  <a href="..\home\detail.html#">India</a>  |  <a href="..\home\detail.html#">Indonesia</a> |  <a href="..\home\detail.html#">Ireland</a> |  <a href="..\home\detail.html#">New Zealand</a> | <a href="..\home\detail.html#">United Kingdom</a> |  <a href="..\home\detail.html#">Turkey</a>  |  <a href="..\home\detail.html#">Philippines</a> |  <a href="..\home\detail.html#">Sri Lanka</a>  |  <a href="..\home\detail.html#">Australia</a> |  <a href="..\home\detail.html#">Brasil</a> | <a href="..\home\detail.html#">Canada</a> |  <a href="..\home\detail.html#">Chile</a>  |  <a href="..\home\detail.html#">Czech Republic</a> |  <a href="..\home\detail.html#">India</a>  |  <a href="..\home\detail.html#">Indonesia</a> |  <a href="..\home\detail.html#">Ireland</a> |  <a href="..\home\detail.html#">New Zealand</a> | <a href="..\home\detail.html#">United Kingdom</a> |  <a href="..\home\detail.html#">Turkey</a>  |  <a href="..\home\detail.html#">Philippines</a> |  <a href="..\home\detail.html#">Sri Lanka</a>
+                  </div>
+                  <p class="mt-4 text-black">POPULAR FOOD</p>
+                  <div class="search-links">
+                     <a href="..\home\detail.html#">Fast Food</a> |  <a href="..\home\detail.html#">Chinese</a> | <a href="..\home\detail.html#">Street Food</a> |  <a href="..\home\detail.html#">Continental</a>  |  <a href="..\home\detail.html#">Mithai</a> |  <a href="..\home\detail.html#">Cafe</a>  |  <a href="..\home\detail.html#">South Indian</a> |  <a href="..\home\detail.html#">Punjabi Food</a> |  <a href="..\home\detail.html#">Fast Food</a> |  <a href="..\home\detail.html#">Chinese</a> | <a href="..\home\detail.html#">Street Food</a> |  <a href="..\home\detail.html#">Continental</a>  |  <a href="..\home\detail.html#">Mithai</a> |  <a href="..\home\detail.html#">Cafe</a>  |  <a href="..\home\detail.html#">South Indian</a> |  <a href="..\home\detail.html#">Punjabi Food</a><a href="..\home\detail.html#">Fast Food</a> |  <a href="..\home\detail.html#">Chinese</a> | <a href="..\home\detail.html#">Street Food</a> |  <a href="..\home\detail.html#">Continental</a>  |  <a href="..\home\detail.html#">Mithai</a> |  <a href="..\home\detail.html#">Cafe</a>  |  <a href="..\home\detail.html#">South Indian</a> |  <a href="..\home\detail.html#">Punjabi Food</a> |  <a href="..\home\detail.html#">Fast Food</a> |  <a href="..\home\detail.html#">Chinese</a> | <a href="..\home\detail.html#">Street Food</a> |  <a href="..\home\detail.html#">Continental</a>  |  <a href="..\home\detail.html#">Mithai</a> |  <a href="..\home\detail.html#">Cafe</a>  |  <a href="..\home\detail.html#">South Indian</a> |  <a href="..\home\detail.html#">Punjabi Food</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+         <div class="container">
+            <p>© Copyright 2019 Our Restaturant. All Rights Reserved</p>
+            <small class="mt-0 mb-0"> Made with <i class="fas fa-heart heart-icon text-danger"></i> by
+            <a class="text-danger" target="_blank" href="#">Our Restaturant</a> - <a class="text-primary" target="_blank" href="..\home\home.html">Ask Bootstrap</a>
+            </small>
+         </div>
+      </footer>
+		
+		
+    </div>
+        
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="owl.carousel.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="jquery2.js"></script> 
+
+    </body>
+</html>
